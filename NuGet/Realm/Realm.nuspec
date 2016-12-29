@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8">
-    <id>Realm</id>
-    <version>$version$</version>
-    <title>Realm</title>
+    <id>Realm-fork-with-sync</id>
+    <version>0.81.0</version>
+    <title>Realm-fork-with-sync</title>
     <authors>Realm</authors>
     <owners>Realm</owners>
     <developmentDependency>true</developmentDependency>
@@ -16,22 +16,22 @@
     <language>en-US</language>
     <tags>Realm database db persistence sqlite</tags>
     <dependencies>
-      <dependency id="Realm.Database" version="$version$"/>
+      <dependency id="Realm.Database-with-sync-fork" version="0.81.0"/>
     </dependencies>
   </metadata>
   <files>
 <!-- PCL file -->
-    <file src="../../Platform.PCL/Realm.Sync.PCL/bin/$Configuration$/Realm.Sync.*" target="lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+Xamarin.iOS10+monotouch+Xamarin.Mac" />
+    <file src="../../Platform.PCL/Realm.Sync.PCL/bin/Release/Realm.Sync.*" target="lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+Xamarin.iOS10+monotouch+Xamarin.Mac" />
 <!-- IOS file -->
-    <file src="../../Platform.XamarinIOS/Realm.Sync.XamarinIOS/bin/iPhoneSimulator/$Configuration$/Realm.Sync.*" target="lib/Xamarin.iOS10" />
-    <file src="../../wrappers/build/$Configuration$-ios-universal/librealm-wrappers.a" target="lib/Xamarin.iOS10" />
+    <file src="../../Platform.XamarinIOS/Realm.Sync.XamarinIOS/bin/iPhone/Release/Realm.Sync.*" target="lib/Xamarin.iOS10" />
+    <file src="../../wrappers/build/Release-ios-universal/librealm-wrappers.a" target="lib/Xamarin.iOS10" />
 <!-- Targets file adds adds references to native libs -->
     <file src="Realm.targets" target="build" />
 <!-- Android files -->
-    <file src="../../Platform.XamarinAndroid/Realm.Sync.XamarinAndroid/bin/$Configuration$/Realm.Sync.*" target="lib/MonoAndroid44" />
-    <file src="../../wrappers/build/$Configuration$-android/armeabi-v7a/librealm-wrappers.so" target="lib/MonoAndroid44/armeabi-v7a" />
-    <file src="../../wrappers/build/$Configuration$-android/arm64-v8a/librealm-wrappers.so" target="lib/MonoAndroid44/arm64-v8a" />
-    <file src="../../wrappers/build/$Configuration$-android/x86/librealm-wrappers.so" target="lib/MonoAndroid44/x86" />
-    <file src="../../wrappers/build/$Configuration$-android/x86_64/librealm-wrappers.so" target="lib/MonoAndroid44/x86_64" />
+    <file src="../../Platform.XamarinAndroid/Realm.Sync.XamarinAndroid/bin/Release/Realm.Sync.*" target="lib/MonoAndroid44" />
+    <file src="../../wrappers/build/Release-android/armeabi-v7a/librealm-wrappers.so" target="lib/MonoAndroid44/armeabi-v7a" />
+    <file src="../../wrappers/build/Release-android/arm64-v8a/librealm-wrappers.so" target="lib/MonoAndroid44/arm64-v8a" />
+    <file src="../../wrappers/build/Release-android/x86/librealm-wrappers.so" target="lib/MonoAndroid44/x86" />
+    <file src="../../wrappers/build/Release-android/x86_64/librealm-wrappers.so" target="lib/MonoAndroid44/x86_64" />
   </files>
 </package>
